@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_normal(){
 	var move = keyboard_check(vk_right) - keyboard_check(vk_left);
 	
@@ -26,11 +24,19 @@ function player_normal(){
 	hsp = dir * msp;
 	
 	if ground {
+		xscale = dir;
 		sprite_index = spr_player_idling;
 		varJump = false;
 		if keyboard_check_pressed(ord("Z")) {
 			vsp = -7.5;
 			sprite_index = spr_player_rollball;
+		}
+		
+		if keyboard_check(vk_down) && msp > 4 then {
+			sprite_index = spr_player_rollball;
+			image_index = 0;
+			mask_index = spr_player_masksmalls;
+			state = states.roll;
 		}
 	} else {
 		if keyboard_check_released(ord("Z")) && !varJump {

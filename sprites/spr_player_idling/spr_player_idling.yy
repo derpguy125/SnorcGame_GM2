@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"10198b7d-661d-4d9e-8eba-510622dbce10","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Snorc",
     "path": "folders/Sprites/Player spriters/Snorc.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 48,
-    "yorigin": 48,
+    "yorigin": 64,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

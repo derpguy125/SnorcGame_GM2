@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "player_normal",
+  "name": "get_slope_angles",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "player states",
-    "path": "folders/Scripts/player junk/player states.yy",
+    "name": "player junk",
+    "path": "folders/Scripts/player junk.yy",
   },
 }

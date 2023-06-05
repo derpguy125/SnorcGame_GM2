@@ -2,6 +2,7 @@
 
 enum states {
 	normal,
+	roll,
 }
 state = states.normal;
 
@@ -15,3 +16,6 @@ ground = true;
 varJump = false;
 
 dir = 1;
+xscale = dir;
+
+angle = 0;

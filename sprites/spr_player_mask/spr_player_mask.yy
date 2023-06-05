@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d8d10043-5420-45a9-8b77-6bcc5cfa236c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Masks",
     "path": "folders/Sprites/Player spriters/Masks.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 48,
-    "yorigin": 48,
+    "yorigin": 64,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

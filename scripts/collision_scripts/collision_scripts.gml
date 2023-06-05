@@ -97,3 +97,50 @@ function collision_thing() {
 	
 }
 
+function collision_player() {
+	// code also shamelessly "rewritten" from code found in a pizza tower decomp namely the xmas break one
+	ground = false;
+	
+	// vertical collisions
+	repeat abs(vsp) {
+		if !solids(x, y+sign(vsp))
+			y += sign(vsp);
+		else {
+			vsp = 0;
+			break;
+		}
+	}
+	
+	// horizont me daddy
+	repeat abs(hsp) {
+		// slonp up
+		if solids(x + sign(hsp), y) && !solids(x + sign(hsp), y - 1) {
+			y --;
+			if state = states.roll then
+				msp -= 0.078125;
+		}
+			
+		// slonp down's
+		if !solids(x + sign(hsp), y) && !solids(x + sign(hsp), y + 1) && solids(x + sign(hsp), y + 2) {
+			y ++;
+			if state = states.roll then
+				msp += 0.078125;
+		}
+			
+		// actual collisions
+		if !solids(x + sign(hsp), y)
+			x += sign(hsp);
+		else {
+			hsp = 0;
+			break;
+		}
+	}
+	
+	// gravity and groundination
+	
+	if vsp < 20 then vsp += grv;
+	
+	ground |= solids(x, y+1);
+	ground |= ((!(place_meeting(x,y,obj_platform))) && place_meeting(x,y+1,obj_platform));
+	
+}

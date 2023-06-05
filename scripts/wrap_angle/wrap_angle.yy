@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "player_normal",
+  "name": "wrap_angle",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "player states",
-    "path": "folders/Scripts/player junk/player states.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

@@ -6,7 +6,11 @@ switch state {
 	default:
 		player_normal();
 		break;
+		
+	case states.roll:
+		player_roll();
+		break;
 }
 
 // collide me daddy
-collision_thing();
+collision_player();
