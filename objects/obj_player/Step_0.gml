@@ -1,16 +1,5 @@
-/// @description step event make player do thing
+/// @description placeholder please add description
 
-// test cjaracter movement's
-switch state {
-	case states.normal:
-	default:
-		player_normal();
-		break;
-		
-	case states.roll:
-		player_roll();
-		break;
-}
+player_normal();
 
-// collide me daddy
-collision_player();
+collision();
