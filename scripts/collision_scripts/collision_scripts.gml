@@ -37,11 +37,9 @@ function get_ground_collision() {
 	
 	if !_sAFound && !_sBFound then {
 		y = round(y);
-		ground = false;
 	} else {
 		y = min(_sAY, _sBY) - hRad;
 		vsp = 0;
-		ground = true;
 	}
 }
 
@@ -50,7 +48,9 @@ function collision() {
 	
 	var _dir = 0;
 	
-	get_ground_collision();
+	if ground then {
+		get_ground_collision();
+	}
 	
 	move_player();
 }
