@@ -4,15 +4,19 @@ function player_air(){
 	var _move = keyboard_check(vk_right) - keyboard_check(vk_left);
 	
 	if _move == 1 then
-		if hsp < top then hsp += airAcc;
+		if gsp < top then gsp += airAcc;
 		
 	if _move == -1 then
-		if hsp > -top then hsp -= airAcc;
+		if gsp > -top then gsp -= airAcc;
 	
 	if vsp < 0 && vsp > -4
-		hsp -= floor(hsp / 0.125) / 256;
+		gsp -= floor(gsp / 0.125) / 256;
+		
+	hsp = gsp;
 	
 	if vsp < 16 then vsp += grv;
+	
+	angle = 0;
 	
 	if ground then state = states.normal;
 }

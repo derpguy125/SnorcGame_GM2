@@ -6,9 +6,7 @@ function player_normal(){
 	// jumping
 	
 	if keyboard_check_pressed(ord("Z")) && ground {
-		gsp = 0;
-		
-		hsp -= jmp * sin(degtorad(angle));
+		gsp -= jmp * sin(degtorad(angle));
 		vsp -= jmp * cos(degtorad(angle));
 	}
 	
