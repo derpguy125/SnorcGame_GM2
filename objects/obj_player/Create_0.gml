@@ -40,6 +40,7 @@ dcc = 0.5;
 frc = acc;
 top = 6;
 
+airAcc = 0.09375;
 jmp = 6.5;
 grv = 0.21875;
 

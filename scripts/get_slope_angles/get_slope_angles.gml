@@ -19,6 +19,6 @@ function get_slope_angles(){
 	
 	if yy1 >= y + 25 or yy2 >= y + 25 then return 0;
 	
-	angular = floor(point_direction(xx1,yy1,xx2,yy2));
+	angular = floor(point_direction(xx1*2,yy1*2,xx2*2,yy2*2));
 	return angular;
 }

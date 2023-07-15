@@ -16,7 +16,7 @@ function solids(xx, yy) {
 	
 	// Plataform Collision
 	
-	if y > oldY and (bbox_bottom % 16) == 0 and 
+	if y > oldY and (bbox_bottom % 8) == 0 and 
 	!place_meeting(x,oldY,obj_platform) and place_meeting(x,y,obj_platform) and vsp > 0 {
 		x = oldX;
 		y = oldY;
@@ -99,8 +99,6 @@ function collision() {
 	}
 	
 	// gravity and groundination
-	
-	if vsp < 16 then vsp += grv;
 	
 	ground |= solids(x, y+1);
 	ground |= ((!(place_meeting(x,y,obj_platform))) && place_meeting(x,y+1,obj_platform));

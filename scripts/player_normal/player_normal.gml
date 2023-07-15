@@ -1,6 +1,17 @@
 function player_normal(){
 	// restart!!
 	
+	// moving the player
+	
+	// jumping
+	
+	if keyboard_check_pressed(ord("Z")) && ground {
+		gsp = 0;
+		
+		hsp -= jmp * sin(degtorad(angle));
+		vsp -= jmp * cos(degtorad(angle));
+	}
+	
 	var _move = keyboard_check(vk_right) - keyboard_check(vk_left);
 	
 	if _move < 0 then {
@@ -24,4 +35,10 @@ function player_normal(){
 	}
 	
 	hsp = gsp;
+	
+	
+	
+	if !ground then {
+		state = states.air;	
+	}
 }

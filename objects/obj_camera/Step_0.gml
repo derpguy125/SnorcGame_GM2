@@ -4,5 +4,5 @@
 xx = round(obj_player.x);
 yy = round(obj_player.y);
 
-xx = clamp(xx - (960/2),0,room_width  - 960);
-yy = clamp(yy - (540/2),0,room_height - 540);
+xx = clamp(xx - (camW/2),0,room_width  - camW);
+yy = clamp(yy - (camH/2),0,room_height - camH);
