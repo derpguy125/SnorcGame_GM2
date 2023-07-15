@@ -31,9 +31,9 @@ vsp = 0;
 
 gsp = 0;
 
-wRad = 9;
-hRad = 19;
-pRad = 10;
+wRad = 7;
+hRad = 16;
+pRad = 8;
 
 acc = 0.046875;
 dcc = 0.5;

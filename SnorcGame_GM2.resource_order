@@ -32,7 +32,6 @@
     {"name":"player_roll","order":1,"path":"scripts/player_roll/player_roll.yy",},
     {"name":"player_air","order":2,"path":"scripts/player_air/player_air.yy",},
     {"name":"obj_platform","order":2,"path":"objects/obj_platform/obj_platform.yy",},
-    {"name":"get_slope_angles","order":2,"path":"scripts/get_slope_angles/get_slope_angles.yy",},
     {"name":"spr_player_masksmall","order":1,"path":"sprites/spr_player_masksmall/spr_player_masksmall.yy",},
     {"name":"obj_slope","order":1,"path":"objects/obj_slope/obj_slope.yy",},
   ],
